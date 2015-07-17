@@ -83,8 +83,8 @@ var entries = _regeneratorRuntime.mark(function entries(obj) {
 });
 
 // returns a regex
-var listenForPingRegex = function listenForPingRegex(self) {
-  return new RegExp('.*' + self.id + '.*ping', 'ig');
+var listenForTrigger = function listenForTrigger(self) {
+  return new RegExp(':pretzels:', 'ig');
 };
 
 // determines channel name
@@ -205,9 +205,9 @@ slack.on('message', function (message) {
   if (type === 'message' && text && channel) {
 
     // respond to ping
-    if (text.match(listenForPingRegex(slack.self))) {
-      log('sending PONG');
-      channel.send(userName + ': PONG');
+    if (text.match(listenForTrigger(slack.self))) {
+      log('sending response...');
+      channel.send('these pretzels... are making me THIRSTY!!');
     }
   } else {
 

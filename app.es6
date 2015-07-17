@@ -13,8 +13,8 @@ const entries = function* (obj) {
 };
 
 // returns a regex
-const listenForPingRegex = function (self) {
-  return new RegExp(`.*${self.id}.*ping`, 'ig');
+const listenForTrigger = function (self) {
+  return new RegExp(':pretzels:', 'ig');
 };
 
 // determines channel name
@@ -99,9 +99,9 @@ slack.on('message', function (message) {
   if (type === 'message' && text && channel) {
 
     // respond to ping
-    if (text.match(listenForPingRegex(slack.self))) {
-      log(`sending PONG`);
-      channel.send(`${userName}: PONG`);
+    if (text.match(listenForTrigger(slack.self))) {
+      log('sending response...');
+      channel.send('these pretzels... are making me THIRSTY!!');
     }
 
   } else {
