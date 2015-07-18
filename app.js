@@ -11,7 +11,7 @@ var _ = require('lodash');
 
 var AUTORECONNECT = true;
 var AUTOMARK = true;
-var TOKEN = process.env.SLACK_TOKEN;
+var TOKEN = process.env.SEINFELDBOT_SLACK_TOKEN;
 
 // enumerate object keys & values
 var entries = _regeneratorRuntime.mark(function entries(obj) {

@@ -3,7 +3,7 @@ const _ = require('lodash');
 
 const AUTORECONNECT = true;
 const AUTOMARK = true;
-const TOKEN = process.env.SLACK_TOKEN;
+const TOKEN = process.env.SEINFELDBOT_SLACK_TOKEN;
 
 // enumerate object keys & values
 const entries = function* (obj) {
