@@ -3,7 +3,7 @@ const _ = require('lodash');
 
 const AUTORECONNECT = true;
 const AUTOMARK = true;
-const TOKEN = process.env.COSTANZABOT_SLACK_TOKEN;
+const TOKEN = process.env.SLACK_TOKEN;
 
 // enumerate object keys & values
 const entries = function* (obj) {
@@ -30,17 +30,6 @@ const getUserName = function (user) {
     return `@${user.name}`;
   }
   return 'UNKNOWN_USER';
-};
-
-// determines user's first name
-const getFirstName = function (user) {
-  if (user) {
-    if (user.profile.first_name) {
-      return user.profile.first_name;
-    }
-    return user.name;
-  }
-  return '';
 };
 
 // wrapper for console.log

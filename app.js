@@ -11,7 +11,7 @@ var _ = require('lodash');
 
 var AUTORECONNECT = true;
 var AUTOMARK = true;
-var TOKEN = process.env.COSTANZABOT_SLACK_TOKEN;
+var TOKEN = process.env.SLACK_TOKEN;
 
 // enumerate object keys & values
 var entries = _regeneratorRuntime.mark(function entries(obj) {
@@ -100,17 +100,6 @@ var getUserName = function getUserName(user) {
     return '@' + user.name;
   }
   return 'UNKNOWN_USER';
-};
-
-// determines user's first name
-var getFirstName = function getFirstName(user) {
-  if (user) {
-    if (user.profile.first_name) {
-      return user.profile.first_name;
-    }
-    return user.name;
-  }
-  return '';
 };
 
 // wrapper for console.log

@@ -1,3 +1,3 @@
 # seinfeldbot
 
-This bot is about nothing.
+A bot about nothing.
