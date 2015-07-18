@@ -1,2 +1,3 @@
-# costanzabot
-Another slackbot
+# seinfeldbot
+
+This bot is about nothing.
