@@ -3,9 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "engines": {
-    "iojs": ">=2.0.0"
+    "node": "0.12"
   },
-  "description": "A.W.E.S.O.M.-O 4000 slack bot.",
+  "description": "A bot about nothing.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/okize/awesom-o"
+    "url": "https://github.com/okize/seinfeldbot"
   },
   "author": "Morgan Wigmanich <okize123@gmail.com> (https://github.com/okize)",
-  "homepage": "https://github.com/okize/awesom-o",
-  "bugs": "https://github.com/okize/awesom-o/issues",
+  "homepage": "https://github.com/okize/seinfeldbot",
+  "bugs": "https://github.com/okize/seinfeldbot/issues",
   "license": "MIT",
   "dependencies": {
     "lodash": "^3.9.3",
