@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "engines": {
-    "node": "0.12"
+    "node": ">= 8"
   },
   "description": "A bot about nothing.",
   "main": "app.js",
