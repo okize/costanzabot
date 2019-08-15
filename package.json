@@ -20,7 +20,7 @@
   "bugs": "https://github.com/okize/seinfeldbot/issues",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^3.9.3",
+    "lodash": "^4.17.11",
     "slack-client": "^1.4.1"
   }
 }
